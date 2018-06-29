@@ -1,0 +1,22 @@
+counter=0;
+if(intel){
+	if(detection){
+		on
+		counter=0
+		intl off
+	}
+	else{
+		counter++
+		if(counter>MAX)
+			off
+
+		if(counter>>MAX)
+			intel on		
+	}
+}
+
+event "intel"
+if(press on){
+	delay(1min)
+	intel on
+}
